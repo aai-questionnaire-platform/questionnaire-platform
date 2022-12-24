@@ -1,0 +1,170 @@
+{
+  "COMMON": {
+    "common": {
+      "fgColor": "",
+      "font": ""
+    },
+    "heading": {
+      "font": "",
+      "weight": ""
+    },
+    "divider": "",
+    "primaryButton": {
+      "default": {
+        "bgColor": "",
+        "fgColor": "",
+        "spinnerColor": ""
+      },
+      "active": {
+        "bgColor": "",
+        "fgColor": ""
+      },
+      "disabled": {
+        "bgColor": "",
+        "fgColor": ""
+      }
+    },
+    "secondaryButton": {
+      "default": {
+        "bgColor": "",
+        "fgColor": "",
+        "spinnerColor": ""
+      },
+      "active": {
+        "bgColor": "",
+        "fgColor": ""
+      },
+      "disabled": {
+        "bgColor": "",
+        "fgColor": ""
+      }
+    },
+    "flatButton": {
+      "default": {
+        "fgColor": ""
+      },
+      "active": {
+        "fgColor": ""
+      },
+      "disabled": {
+        "fgColor": ""
+      }
+    }
+  },
+  "FRONT_PAGE": {
+    "key": "frontPage",
+    "value": {
+      "divider": ""
+    }
+  },
+  "CATEGORY": {
+    "key": "category",
+    "value": {
+      "card": {
+        "fgColor": "",
+        "bgColor": ""
+      },
+      "categoryProgressTracker": {
+        "default": {
+          "bgColor": "",
+          "fgColor": ""
+        },
+        "active": {
+          "bgColor": "",
+          "fgColor": ""
+        }
+      },
+      "option": {
+        "default": {
+          "bgColor": "",
+          "fgColor": "",
+          "border": ""
+        },
+        "active": {
+          "bgColor": "",
+          "fgColor": "",
+          "border": ""
+        }
+      }
+    }
+  },
+  "CATEGORY_END": {
+    "key": "categoryEnd",
+    "value": {
+      "playerAppHeader": {
+        "color": ""
+      }
+    }
+  },
+  "PROGRESS": {
+    "key": "progress",
+    "value": {
+      "fgColor": "",
+      "font": "",
+      "playerAppHeader": {
+        "color": ""
+      },
+      "progressButton": {
+        "default": {
+          "bgColor": "",
+          "fgColor": ""
+        },
+        "active": {
+          "bgColor": "",
+          "fgColor": "",
+          "pulseColor": ""
+        },
+        "disabled": {
+          "bgColor": "",
+          "fgColor": ""
+        }
+      }
+    }
+  },
+  "ANSWER_SUMMARY": {
+    "key": "answerSummary",
+    "value": {
+      "text": "",
+      "chart": {
+        "default": "",
+        "highlight": "",
+        "text": ""
+      }
+    }
+  },
+  "ADMIN_ANSWER_SUMMARY": {
+    "key": "answerSummary",
+    "value": {
+      "text": "",
+      "chart": {
+        "default": "",
+        "highlight": "",
+        "text": ""
+      }
+    }
+  },
+  "ADMIN_GROUPS": {
+    "key": "adminGroups",
+    "value": {
+      "border": "",
+      "text": "",
+      "heading": "",
+      "activeCategoryListItem": {
+        "bgColor": "",
+        "fgColor": ""
+      }
+    }
+  },
+  "ADMIN_CATEGORIES": {
+    "key": "adminCategories",
+    "value": {
+      "text": "",
+      "border": "",
+      "dashedLine": "",
+      "listItem": {
+        "bgColor": "",
+        "activeBorder": ""
+      }
+    }
+  }
+}

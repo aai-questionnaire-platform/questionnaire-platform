@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "Group": {
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "parent_organization_id": {
+                    "type": "string"
+                },
+                "valid_from": {
+                    "description": "First date until a group is valid (selectable)",
+                    "type": "string"
+                },
+                "valid_until": {
+                    "description": "Last date until a group is valid (selectable)",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "parent_organization_id",
+                "valid_until"
+            ],
+            "type": "object"
+        }
+    },
+    "description": "Post request body for linking a user and a group. If only existing link is given the existing\nlink is removed and no link is created.",
+    "properties": {
+        "group": {
+            "$ref": "#/definitions/Group",
+            "description": "An object describing current link. If given this link will be removed"
+        },
+        "user_id": {
+            "description": "An object describing the created link",
+            "type": "string"
+        }
+    },
+    "required": [
+        "group",
+        "user_id"
+    ],
+    "type": "object"
+}
+

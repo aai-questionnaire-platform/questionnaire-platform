@@ -1,0 +1,26 @@
+name: 'DEV build & deploy'
+on:
+  push:
+    branches:
+      - 'dev'
+jobs:
+  cdk_deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checking out code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Deploy react app
+        run: ./scripts/deploy-stack.sh -e dev
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      - name: Clear cloudfront cache
+        run: ./scripts/clear-cdn-cache.sh -e dev
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}

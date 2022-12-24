@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Title",
+    "categoryId": "0dcd2fa1-56bd-4cb9-8681-8184fb30f12d",
+    "id": "a632eaaf-02e0-41fe-ab25-7b2d99b7be68",
+    "serviceProvider": "Provider",
+    "description": "Description.",
+    "link": "link",
+    "coverPhoto": "http://www.google.com"
+  }
+]

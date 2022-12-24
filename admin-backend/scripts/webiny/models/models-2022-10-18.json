@@ -1,0 +1,1827 @@
+{
+	"listContentModelGroups": {
+		"data": [
+			{
+				"id": "61c2f7bc9d52f9000a0c6576",
+				"name": "Ungrouped",
+				"icon": "fas/star",
+				"slug": "ungrouped",
+				"description": "A generic content model group"
+			},
+			{
+				"id": "61c4202128e5ad0009583d98",
+				"name": "Questionnaire",
+				"icon": "far/question-circle",
+				"slug": "questionnaire",
+				"description": null
+			},
+			{
+				"id": "61c4202228e5ad0009583d99",
+				"name": "Organization",
+				"icon": "fas/stream",
+				"slug": "organization",
+				"description": null
+			},
+			{
+				"id": "61c4202328e5ad0009583d9a",
+				"name": "Game",
+				"icon": "fas/gamepad",
+				"slug": "game",
+				"description": null
+			}
+		]
+	},
+	"listContentModels": {
+		"data": [
+			{
+				"name": "Category",
+				"modelId": "category",
+				"description": null,
+				"group": {
+					"id": "61c4202128e5ad0009583d98"
+				},
+				"fields": [
+					{
+						"id": "vQILz057x",
+						"fieldId": "description",
+						"label": "description",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "tDI2dBA2p",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "S_YzTuHmT",
+						"fieldId": "questionnaireUuid",
+						"label": "questionnaire_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "rGqzYJq0E",
+						"fieldId": "entryMessages",
+						"label": "entryMessages",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": true,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-inputs"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "YQ13B8ZwI",
+						"fieldId": "exitMessages",
+						"label": "exitMessages",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": true,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-inputs"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "dxZGsRt-l",
+						"fieldId": "deletedAt",
+						"label": "deleted_at",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "_xA8WPcvF",
+						"fieldId": "editedBy",
+						"label": "edited_by",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "0J-bDKeK9",
+						"fieldId": "gameUuid",
+						"label": "game_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "dzNAnlN0g",
+						"fieldId": "sortIndex",
+						"label": "sortIndex",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "number",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "number-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "np-xZHMZE",
+						"fieldId": "questionnaireRevision",
+						"label": "questionnaire_revision",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "DyKSUOKdb",
+						"fieldId": "backgroundColor",
+						"label": "background_color",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "mxMHbmEuG",
+						"fieldId": "backgroundImage",
+						"label": "background_image",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "KTvcuRekl",
+						"fieldId": "image",
+						"label": "image",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					}
+				],
+				"layout": [
+					[
+						"vQILz057x"
+					],
+					[
+						"tDI2dBA2p"
+					],
+					[
+						"S_YzTuHmT"
+					],
+					[
+						"YQ13B8ZwI"
+					],
+					[
+						"rGqzYJq0E"
+					],
+					[
+						"dxZGsRt-l"
+					],
+					[
+						"_xA8WPcvF"
+					],
+					[
+						"0J-bDKeK9"
+					],
+					[
+						"dzNAnlN0g"
+					],
+					[
+						"np-xZHMZE"
+					],
+					[
+						"DyKSUOKdb"
+					],
+					[
+						"mxMHbmEuG"
+					],
+					[
+						"KTvcuRekl"
+					]
+				],
+				"titleFieldId": "description"
+			},
+			{
+				"name": "Game",
+				"modelId": "game",
+				"description": null,
+				"group": {
+					"id": "61c4202328e5ad0009583d9a"
+				},
+				"fields": [
+					{
+						"id": "5ST7STJ24",
+						"fieldId": "name",
+						"label": "name",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "hwpTlR_61",
+						"fieldId": "urlTest",
+						"label": "url_test",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "8rvdEDuaz",
+						"fieldId": "urlProd",
+						"label": "url_prod",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "B6YGdbG0a",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "ZSzdz6GFa",
+						"fieldId": "deletedAt",
+						"label": "deleted_at",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "XCAJXNiBP",
+						"fieldId": "editedBy",
+						"label": "edited_by",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					}
+				],
+				"layout": [
+					[
+						"5ST7STJ24"
+					],
+					[
+						"hwpTlR_61"
+					],
+					[
+						"8rvdEDuaz"
+					],
+					[
+						"B6YGdbG0a"
+					],
+					[
+						"ZSzdz6GFa"
+					],
+					[
+						"XCAJXNiBP"
+					]
+				],
+				"titleFieldId": "name"
+			},
+			{
+				"name": "Group",
+				"modelId": "group",
+				"description": null,
+				"group": {
+					"id": "61c4202228e5ad0009583d99"
+				},
+				"fields": [
+					{
+						"id": "whjiSYScU",
+						"fieldId": "name",
+						"label": "name",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "3lzKcZ0UU",
+						"fieldId": "validFrom",
+						"label": "valid_from",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "tBOYWunC6",
+						"fieldId": "validUntil",
+						"label": "validUntil",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "Z0meMdsJE",
+						"fieldId": "parentOrganizationId",
+						"label": "parent_organization_id",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "j5cagsPTa",
+						"fieldId": "pin",
+						"label": "pin",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "Hgo020dxT",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "bFgSevT6Z",
+						"fieldId": "organizationUuid",
+						"label": "organization_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "I-7u4WITX",
+						"fieldId": "deletedAt",
+						"label": "deleted_at",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "ddOetmRV1",
+						"fieldId": "editedBy",
+						"label": "edited_by",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "rVukTj_8f",
+						"fieldId": "gameUuid",
+						"label": "game_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					}
+				],
+				"layout": [
+					[
+						"Hgo020dxT"
+					],
+					[
+						"bFgSevT6Z"
+					],
+					[
+						"Z0meMdsJE"
+					],
+					[
+						"whjiSYScU"
+					],
+					[
+						"3lzKcZ0UU"
+					],
+					[
+						"tBOYWunC6"
+					],
+					[
+						"j5cagsPTa"
+					],
+					[
+						"I-7u4WITX"
+					],
+					[
+						"ddOetmRV1"
+					],
+					[
+						"rVukTj_8f"
+					]
+				],
+				"titleFieldId": "name"
+			},
+			{
+				"name": "Option",
+				"modelId": "option",
+				"description": null,
+				"group": {
+					"id": "61c4202128e5ad0009583d98"
+				},
+				"fields": [
+					{
+						"id": "SPjsOKq5Z",
+						"fieldId": "label",
+						"label": "label",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "uFaOuzquN",
+						"fieldId": "value",
+						"label": "value",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "chRki2_LG",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "FGlZxoS2c",
+						"fieldId": "questionUuid",
+						"label": "question_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "t2ATjuxVC",
+						"fieldId": "deletedAt",
+						"label": "deleted_at",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "FqdAMnSA7",
+						"fieldId": "editedBy",
+						"label": "edited_by",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "WixdkLx-D",
+						"fieldId": "sortIndex",
+						"label": "sortIndex",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "number",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "number-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "To7vSlTZ1",
+						"fieldId": "gameUuid",
+						"label": "game_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "isFrrMYbq",
+						"fieldId": "questionnaireRevision",
+						"label": "questionnaire_revision",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					}
+				],
+				"layout": [
+					[
+						"SPjsOKq5Z"
+					],
+					[
+						"chRki2_LG"
+					],
+					[
+						"FGlZxoS2c"
+					],
+					[
+						"uFaOuzquN"
+					],
+					[
+						"WixdkLx-D"
+					],
+					[
+						"t2ATjuxVC"
+					],
+					[
+						"FqdAMnSA7"
+					],
+					[
+						"To7vSlTZ1"
+					],
+					[
+						"isFrrMYbq"
+					]
+				],
+				"titleFieldId": "label"
+			},
+			{
+				"name": "Organization",
+				"modelId": "organization",
+				"description": null,
+				"group": {
+					"id": "61c4202228e5ad0009583d99"
+				},
+				"fields": [
+					{
+						"id": "aBUEoi4ke",
+						"fieldId": "name",
+						"label": "name",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "MFbpE1eIH",
+						"fieldId": "type",
+						"label": "type",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "H88Wl_r3_",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "4DV2NfcYl",
+						"fieldId": "parentUuid",
+						"label": "parent_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "ceLT4xdfJ",
+						"fieldId": "deletedAt",
+						"label": "deleted_at",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "nsUyp9_1y",
+						"fieldId": "editedBy",
+						"label": "edited_by",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "1Nxp2OXR-",
+						"fieldId": "gameUuid",
+						"label": "game_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					}
+				],
+				"layout": [
+					[
+						"aBUEoi4ke"
+					],
+					[
+						"H88Wl_r3_"
+					],
+					[
+						"4DV2NfcYl"
+					],
+					[
+						"MFbpE1eIH"
+					],
+					[
+						"ceLT4xdfJ"
+					],
+					[
+						"nsUyp9_1y"
+					],
+					[
+						"1Nxp2OXR-"
+					]
+				],
+				"titleFieldId": "name"
+			},
+			{
+				"name": "Question",
+				"modelId": "question",
+				"description": null,
+				"group": {
+					"id": "61c4202128e5ad0009583d98"
+				},
+				"fields": [
+					{
+						"id": "FYt7Uni3f",
+						"fieldId": "label",
+						"label": "label",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "abRiVApcQ",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "_jg0DSus_",
+						"fieldId": "categoryUuid",
+						"label": "category_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "hW7h3iBUw",
+						"fieldId": "topicUuid",
+						"label": "topic_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "NkoqlDRZT",
+						"fieldId": "exitMessage",
+						"label": "exitMessage",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "Fi_dXEoND",
+						"fieldId": "deletedAt",
+						"label": "deleted_at",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "KFVAvq-yR",
+						"fieldId": "editedBy",
+						"label": "edited_by",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "CAaMya9KA",
+						"fieldId": "typeUuid",
+						"label": "type_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "nNR9UIGne",
+						"fieldId": "gameUuid",
+						"label": "game_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "K9n8Fp3o7",
+						"fieldId": "sortIndex",
+						"label": "sortIndex",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "number",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "number-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "qnQdr7SL4",
+						"fieldId": "questionnaireRevision",
+						"label": "questionnaire_revision",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "x6466wNjW",
+						"fieldId": "tags",
+						"label": "tags",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": true,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-inputs"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					}
+				],
+				"layout": [
+					[
+						"FYt7Uni3f"
+					],
+					[
+						"abRiVApcQ"
+					],
+					[
+						"_jg0DSus_"
+					],
+					[
+						"hW7h3iBUw"
+					],
+					[
+						"CAaMya9KA"
+					],
+					[
+						"NkoqlDRZT"
+					],
+					[
+						"Fi_dXEoND"
+					],
+					[
+						"KFVAvq-yR"
+					],
+					[
+						"nNR9UIGne"
+					],
+					[
+						"K9n8Fp3o7"
+					],
+					[
+						"qnQdr7SL4"
+					],
+					[
+						"x6466wNjW"
+					]
+				],
+				"titleFieldId": "label"
+			},
+			{
+				"name": "QuestionType",
+				"modelId": "questionType",
+				"description": "Type of the question (e.g. single selection or multi selection).",
+				"group": {
+					"id": "61c4202128e5ad0009583d98"
+				},
+				"fields": [
+					{
+						"id": "zo_Af17W8",
+						"fieldId": "label",
+						"label": "label",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "V9ZiK8XiI",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "666pqYPO1",
+						"fieldId": "answerType",
+						"label": "answer_type",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "Vegntb1rb",
+						"fieldId": "gameUuid",
+						"label": "game_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "isSG7YJDj",
+						"fieldId": "deletedAt",
+						"label": "deletedAt",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					}
+				],
+				"layout": [
+					[
+						"zo_Af17W8"
+					],
+					[
+						"V9ZiK8XiI"
+					],
+					[
+						"666pqYPO1"
+					],
+					[
+						"isSG7YJDj"
+					],
+					[
+						"Vegntb1rb"
+					]
+				],
+				"titleFieldId": "label"
+			},
+			{
+				"name": "Questionnaire",
+				"modelId": "questionnaire",
+				"description": null,
+				"group": {
+					"id": "61c4202128e5ad0009583d98"
+				},
+				"fields": [
+					{
+						"id": "BHXUttMsl",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "3T1BCdZgU",
+						"fieldId": "title",
+						"label": "title",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "juD2LVpYy",
+						"fieldId": "author",
+						"label": "author",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "xVxlKK6ex",
+						"fieldId": "locale",
+						"label": "locale",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "pW-U2FshN",
+						"fieldId": "deletedAt",
+						"label": "deleted_at",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "YsoQxCFcj",
+						"fieldId": "editedBy",
+						"label": "edited_by",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "ktCK0nJKM",
+						"fieldId": "gameUuid",
+						"label": "game_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					}
+				],
+				"layout": [
+					[
+						"3T1BCdZgU"
+					],
+					[
+						"BHXUttMsl"
+					],
+					[
+						"juD2LVpYy"
+					],
+					[
+						"xVxlKK6ex"
+					],
+					[
+						"pW-U2FshN"
+					],
+					[
+						"YsoQxCFcj"
+					],
+					[
+						"ktCK0nJKM"
+					]
+				],
+				"titleFieldId": "title"
+			},
+			{
+				"name": "Topic",
+				"modelId": "topic",
+				"description": null,
+				"group": {
+					"id": "61c4202128e5ad0009583d98"
+				},
+				"fields": [
+					{
+						"id": "afBnOCr8_",
+						"fieldId": "label",
+						"label": "label",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "9vY6OlWiR",
+						"fieldId": "value",
+						"label": "value",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "cFLJkxvCs",
+						"fieldId": "uuid",
+						"label": "uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "tGEqxJerz",
+						"fieldId": "deletedAt",
+						"label": "deleted_at",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "datetime",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "date-time-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {
+							"type": "dateTimeWithTimezone"
+						}
+					},
+					{
+						"id": "uCtjFglbr",
+						"fieldId": "editedBy",
+						"label": "edited_by",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					},
+					{
+						"id": "4od1cMudi",
+						"fieldId": "gameUuid",
+						"label": "game_uuid",
+						"helpText": null,
+						"placeholderText": null,
+						"type": "text",
+						"multipleValues": false,
+						"predefinedValues": {
+							"enabled": false,
+							"values": []
+						},
+						"renderer": {
+							"name": "text-input"
+						},
+						"validation": [],
+						"listValidation": [],
+						"settings": {}
+					}
+				],
+				"layout": [
+					[
+						"afBnOCr8_"
+					],
+					[
+						"9vY6OlWiR"
+					],
+					[
+						"cFLJkxvCs"
+					],
+					[
+						"tGEqxJerz"
+					],
+					[
+						"uCtjFglbr"
+					],
+					[
+						"4od1cMudi"
+					]
+				],
+				"titleFieldId": "label"
+			}
+		]
+	}
+}

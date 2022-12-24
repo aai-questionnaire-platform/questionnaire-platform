@@ -1,0 +1,21 @@
+*.js
+!jest.config.js
+!scripts
+!scripts/webiny/*.js
+
+node_modules
+
+# env & editors
+.DS_Store
+.vscode
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+template.yaml
+.aws-sam/build.toml
+.aws-sam
+
+# misc
+.eslintcache
+.idea/*

@@ -1,0 +1,27 @@
+name: 'Deploy Instance'
+on:
+  workflow_dispatch:
+    inputs:
+      instance:
+        type: choice
+        description: Select instance
+        required: true
+        options:
+          - dev
+jobs:
+  cdk_deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checking out our code
+        uses: actions/checkout@v2
+      - name: Install AWS CDK
+        run: npm install aws-cdk
+      - name: Install dependencies
+        run: npm install
+      - name: CDK Deploy
+        run: npx cdk deploy QuestionnaireFactoryInfraStack-${{ github.event.inputs.instance }} --require-approval=never
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}

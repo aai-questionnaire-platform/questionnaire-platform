@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "parent_organization_id": {
+            "type": "string"
+        },
+        "pin": {
+            "type": "string"
+        },
+        "valid_from": {
+            "description": "First date until a group is valid (selectable)",
+            "type": "string"
+        },
+        "valid_until": {
+            "description": "Last date until a group is valid (selectable)",
+            "type": "string"
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "parent_organization_id",
+        "pin",
+        "valid_until"
+    ],
+    "type": "object"
+}
+

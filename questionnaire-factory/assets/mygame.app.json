@@ -1,0 +1,258 @@
+{
+  "$schema": "../schema/AppStructure.json",
+  "meta": {
+    "title": "REMOVED",
+    "lang": "fi"
+  },
+  "routes": [
+    {
+      "path": "/",
+      "meta": {
+        "title": "",
+        "auth": false
+      },
+      "children": [
+        {
+          "type": "FRONT_PAGE",
+          "props": {
+            "background": {
+              "type": "IMAGE",
+              "value": "/REMOVED/background.jpg"
+            },
+            "playerLogin": {
+              "callbackUrl": "/REMOVED/progress",
+              "variant": "secondary",
+              "provider": "aai"
+            },
+            "adminLogin": {
+              "callbackUrl": "/REMOVED/admin",
+              "variant": "primary",
+              "provider": "cognito"
+            },
+            "contactLink": {
+              "slug": "mailto:REMOVED"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "register",
+      "meta": {
+        "title": "Liity ryhmään",
+        "auth": {
+          "roles": ["mmk-rs/questionnaire:play"]
+        }
+      },
+      "children": [
+        {
+          "type": "REGISTRATION",
+          "props": {
+            "background": {
+              "type": "IMAGE",
+              "value": "/REMOVED/background.jpg"
+            },
+            "method": "PIN_CODE",
+            "nextButton": {
+              "slug": "progress"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "progress",
+      "meta": {
+        "title": "",
+        "auth": {
+          "roles": ["mmk-rs/questionnaire:play"]
+        }
+      },
+      "children": [
+        {
+          "type": "PROGRESS",
+          "props": {
+            "background": {
+              "type": "IMAGE",
+              "value": "/REMOVED/map_background.jpg"
+            },
+            "category": {
+              "answerSummaryButton": {
+                "lockedIcon": "/REMOVED/nuotio_default.svg",
+                "activeIcon": "/REMOVED/nuotio_active.svg",
+                "doneIcon": "/REMOVED/nuotio_done.svg",
+                "link": {
+                  "slug": "answersummary"
+                }
+              },
+              "categoryButton": {
+                "link": {
+                  "slug": "category"
+                }
+              }
+            },
+            "feedback": {
+              "link": {
+                "slug": "feedback"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "category",
+      "meta": {
+        "title": "",
+        "auth": {
+          "roles": ["mmk-rs/questionnaire:play"]
+        }
+      },
+      "children": [
+        {
+          "type": "CATEGORY",
+          "props": {
+            "background": {
+              "type": "COLOR",
+              "value": "linear-gradient(180deg, #474E31 -16.55%, #61523D 24.59%, #2C4139 63.76%, #1E1E1E 107.51%)"
+            },
+            "categoryStartCard": {},
+            "navigation": {
+              "buttonVariant": "flat",
+              "font": "22px 'IM FELL English SC', serif"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "category/end",
+      "meta": {
+        "title": "Kiitos!",
+        "auth": {
+          "roles": ["mmk-rs/questionnaire:play"]
+        }
+      },
+      "children": [
+        {
+          "type": "CATEGORY_END",
+          "props": {
+            "background": {
+              "type": "COLOR",
+              "value": "linear-gradient(180deg, #474E31 -16.55%, #61523D 24.59%, #2C4139 63.76%, #1E1E1E 107.51%)"
+            },
+            "image": {
+              "src": "/REMOVED/nuotio_category_end.svg",
+              "width": 186,
+              "height": 243
+            },
+            "link": {
+              "slug": "progress"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "answersummary",
+      "meta": {
+        "title": "",
+        "auth": {
+          "roles": ["mmk-rs/questionnaire:play"]
+        }
+      },
+      "children": [
+        {
+          "type": "ANSWER_SUMMARY",
+          "props": {
+            "background": {
+              "type": "IMAGE",
+              "value": "/REMOVED/background.jpg"
+            },
+            "backLink": {
+              "slug": "progress"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "admin",
+      "meta": {
+        "title": "Hallintanäkymä",
+        "auth": {
+          "roles": ["mmk-rs/questionnaire:approve"]
+        }
+      },
+      "children": [
+        {
+          "type": "ADMIN_GROUPS",
+          "props": {
+            "background": {
+              "type": "IMAGE",
+              "value": "/REMOVED/background.jpg"
+            },
+            "headerLogo": {
+              "type": "IMAGE",
+              "value": "/REMOVED/REMOVED.jpg"
+            },
+            "buttonVariant": "primary"
+          }
+        }
+      ]
+    },
+    {
+      "path": "admin/categories",
+      "meta": {
+        "title": "",
+        "auth": {
+          "roles": ["mmk-rs/questionnaire:approve"]
+        }
+      },
+      "children": [
+        {
+          "type": "ADMIN_CATEGORIES",
+          "props": {
+            "background": {
+              "type": "IMAGE",
+              "value": "/REMOVED/background.jpg"
+            },
+            "headerBackLink": {
+              "slug": "admin"
+            },
+            "icons": {
+              "lockedIcon": "/REMOVED/nuotio_default.svg",
+              "activeIcon": "/REMOVED/nuotio_active.svg",
+              "doneIcon": "/REMOVED/nuotio_done.svg"
+            },
+            "buttonVariant": "primary"
+          }
+        }
+      ]
+    },
+    {
+      "path": "admin/answersummary",
+      "meta": {
+        "title": "",
+        "auth": {
+          "roles": ["mmk-rs/questionnaire:approve"]
+        }
+      },
+      "children": [
+        {
+          "type": "ADMIN_ANSWER_SUMMARY",
+          "props": {
+            "background": {
+              "type": "IMAGE",
+              "value": "/REMOVED/background.jpg"
+            },
+            "headerBackLink": {
+              "slug": "admin/categories"
+            },
+            "buttonVariant": "primary"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "fi": {
+    "translation": {
+      "errorBoundary": {
+        "heading": "Hupsista, jokin meni pieleen!",
+        "description": "Päivitä selainikkuna ja yritä uudelleen",
+        "buttonLabel": "Päivitä selainikkuna"
+      },
+
+      "networkError": {
+        "error": "Virhe",
+        "heading": "Hupsista!",
+        "body": "Tapahtui virhe. Yritä myöhemmin uudelleen.",
+        "buttonLabel": "Palaa etusivulle",
+        "close": "Sulje"
+      },
+
+      "signInError": {
+        "title": "Virhe kirjautumisessa",
+        "heading": "Hupsista :(",
+        "body": "Kirjautumisessa meni joku pahasti pieleen.\nYritä kirjautua uudelleen. Mikäli ongelma ei poistu, ota yhteyttä ylläpitoon.",
+        "buttonLabel": "Palaa etusivulle"
+      }
+    }
+  }
+}

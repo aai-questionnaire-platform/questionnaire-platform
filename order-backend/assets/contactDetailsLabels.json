@@ -1,0 +1,17 @@
+[
+  { "label": "Sukunimi", "name": "lastName" },
+  { "label": "Etunimi", "name": "firstName" },
+  { "label": "Puhelinnumero", "name": "phone" },
+  { "label": "Osoite", "name": "address" },
+  {
+    "label": "Postinumero",
+    "name": "postalCode"
+  },
+  { "label": "Toimipaikka", "name": "city" },
+  { "label": "Ovikoodi", "name": "doorCode" },
+  {
+    "label": "Lisätietoja",
+    "name": "additionalInfo"
+  },
+  { "label": "Sähköposti", "name": "email" }
+]

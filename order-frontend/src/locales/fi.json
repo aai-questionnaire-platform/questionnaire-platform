@@ -1,0 +1,40 @@
+{
+  "translation": {
+    "back": "Takaisin",
+    "formErrors": {
+      "invalidEmail": "Syötä kelvollinen sähköpostiosoite",
+      "postalCodeLength": "Postinumeron tulee olla 5 merkin mittainen",
+      "postalCodeNumber": "Postinumeron on oltava numero",
+      "required": "Pakollinen kenttä"
+    },
+    "services": {
+      "backButtonAlt": "Siirry kotinäkymään",
+      "welcomeTitle": "Hei!",
+      "welcomeText": "Tervetuloa",
+      "contact": "Ota yhteyttä",
+      "order": "Tutustu ja tilaa",
+      "ordered": "Tilattu",
+      "seeContactInfo": "Katso yhteystiedot",
+      "orderFree": "Tilaa maksutta",
+      "showCode": "Näytä koodi"
+    },
+    "location": "Sijainti",
+    "loginError": "Jotain meni pieleen",
+    "opensInNewTab": "Avautuu uuteen välilehteen",
+    "order": {
+      "title": "Syötä yhteystietosi",
+      "requiredField": "Pakollinen tieto",
+      "privacyPolicy": "Antamasi yhteystiedot välitetään palveluntarjoajalle. <Link>Katso {{serviceProvider}}-tietosuojaseloste</Link>.",
+      "orderProduct": "Tilaa tuote",
+      "code": {
+        "error": {
+          "404": "Koodia ei löytynyt",
+          "*": "Tapahtui virhe"
+        }
+      }
+    },
+    "success": {
+      "backToServices": "Palaa palveluiden valintaan"
+    }
+  }
+}

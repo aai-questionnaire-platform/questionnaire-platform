@@ -1,0 +1,149 @@
+{
+  "COMMON": {
+    "loading": "Ladataan",
+    "logout": "Kirjaudu ulos"
+  },
+  "ADMIN_ANSWER_SUMMARY": {
+    "key": "adminAnswerSummary",
+    "value": {
+      "title": "",
+      "headerBackLinkLabel": "",
+      "completionStatistics": "",
+      "topicAddressed": {
+        "approvedDescription": "",
+        "approvedButtonLabel": "",
+        "unlockedDescription": "",
+        "unlockedButtonLabel": ""
+      }
+    }
+  },
+  "ADMIN_CATEGORIES": {
+    "key": "adminCategories",
+    "value": {
+      "title": "",
+      "headerBackLinkLabel": "",
+      "groupMemberCount": "",
+      "groupPinCode": "",
+      "seeQuestions": "",
+      "multipleChoice": "",
+      "undoActivation": "",
+      "topicCovered": "",
+      "categoryCompletionStatistics": "",
+      "unlockLevel": "",
+      "seeAnswers": "",
+      "feedbackDescription": "",
+      "categoryLocked": "",
+      "categoryActive": "",
+      "categoryApproved": ""
+    }
+  },
+  "ADMIN_GROUPS": {
+    "key": "adminGroups",
+    "value": {
+      "headerLogoAlt": "",
+      "body": "",
+      "groupListheading": "",
+      "noGroups": "",
+      "activeCategories": "",
+      "categoryLinkButtonLabel": "",
+      "groupPinCode": ""
+    }
+  },
+  "ANSWER_SUMMARY": {
+    "key": "answerSummary",
+    "value": {
+      "answerSummaryTitle": "",
+      "results": "",
+      "noResultsHeading": "",
+      "noResultsDescription": "",
+      "description": "",
+      "youAnswered": "",
+      "ordinalWithGenetive": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": ""
+      },
+      "endText": "",
+      "backButton": ""
+    }
+  },
+  "CATEGORY": {
+    "key": "category",
+    "value": {
+      "cardProgress": "",
+      "cardImageAlt": "",
+      "questionNumber": "",
+      "category": "",
+      "questionLockedDescription": "",
+      "categoryLocked": "",
+      "next": "",
+      "prev": "",
+      "endTitle": "",
+      "endContent": "",
+      "endButton": "",
+      "endImageAlt": "",
+      "saveError": ""
+    }
+  },
+  "FEEDBACK": {
+    "key": "feedback",
+    "value": {
+      "heading": "",
+      "body": "",
+      "primaryButton": "",
+      "secondaryButton": ""
+    }
+  },
+  "FRONT_PAGE": {
+    "key": "frontPage",
+    "value": {
+      "heading": "",
+      "playerBody": "",
+      "playerLoginLabel": "",
+      "adminBody": "",
+      "adminLoginLabel": "",
+      "registerBody": "",
+      "registerLabel": ""
+    }
+  },
+  "PROGRESS": {
+    "key": "progress",
+    "value": {
+      "answerSummaryActive": "",
+      "answerSummaryDone": "",
+      "answerSummaryLocked": "",
+      "feedbackButton": ""
+    }
+  },
+  "REGISTRATION": {
+    "key": "registration",
+    "value": {
+      "groupPreview": {
+        "heading": "",
+        "groupLabel": "",
+        "organizationLabel": "",
+        "groupAdmin": "",
+        "description": "",
+        "confirm": "",
+        "cancel": "",
+        "joinError": ""
+      },
+      "pin": {
+        "heading": "",
+        "body": "",
+        "inputLabel": "",
+        "error": {
+          "codeTooShort": "",
+          "groupNotFound": ""
+        },
+        "nextButtonLabel": ""
+      }
+    }
+  }
+}

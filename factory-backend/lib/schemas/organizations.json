@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "Organization": {
+            "description": "Represents an organization, e.g. \"Hiippakunta\"\nThe organization may define zero or more \"children\" e.g. Hiippakunta may have several seurakuntas below it,\nwhich may define zero or more active \"rippikoulus\" beneath.",
+            "properties": {
+                "children": {
+                    "description": "Children, if any, e.g. Hiippakunta -> number of seurakuntas -> number of rippikoulu groups",
+                    "items": {
+                        "$ref": "#/definitions/Organization"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "description": "Unique ID (perhaps non-readable) of the organization to be used e.g. to link to a map.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "Organization name (localized), e.g. \"Pohjois-Suomi\", \"Rovaniemi\", \"Juhannusryhmä 1\"",
+                    "type": "string"
+                },
+                "type": {
+                    "description": "Organization type (localized), e.g. \"Hiippakunta\", \"Seurakunta\", \"Rippikouluryhmä\"",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "type"
+            ],
+            "type": "object"
+        }
+    },
+    "description": "Container structure to depict an organization",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "organizations": {
+            "items": {
+                "$ref": "#/definitions/Organization"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "name",
+        "organizations"
+    ],
+    "type": "object"
+}
+

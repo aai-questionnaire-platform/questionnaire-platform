@@ -1,0 +1,120 @@
+{
+  "fi": {
+    "translation": {
+      "adminAnswerSummary": {
+        "title": "Hallintanäkymä / {{ categoryName }}",
+        "headerBackLinkLabel": "Takaisin ryhmään",
+        "completionStatistics": "Vastanneita yhteensä {{ completionCount }}/{{ groupMemberCount }}",
+        "topicAddressed": {
+          "approvedDescription": "Osio on merkitty käsitellyksi.",
+          "approvedButtonLabel": "Palauta avoimeksi",
+          "unlockedDescription": "Osioon voi yhä tulla vastauksia.",
+          "unlockedButtonLabel": "Aihe käsitelty"
+        }
+      },
+      "adminCategories": {
+        "title": "Hallintanäkymä / {{ groupName }}",
+        "headerBackLinkLabel": "Omat ryhmät",
+        "groupMemberCount": "Yhteensä {{ memberCount }} käyttäjää ryhmässä on ottanut sovelluksen käyttöön.",
+        "groupPinCode": "Ryhmän PIN-koodi: <bold>{{ pin }}</bold>",
+        "seeQuestions": "Katso kysymyksiä ({{ count }})",
+        "multipleChoice": "Monivalinta",
+        "undoActivation": "Peru aktivointi",
+        "topicCovered": "Aihe läpikäyty",
+        "categoryCompletionStatistics": "Vastanneita\n{{ completionCount }}/{{ groupMemberCount }}",
+        "unlockLevel": "Aktivoi osio",
+        "seeAnswers": "Tarkastele vastauksia",
+        "feedbackDescription": "Viimeinen osio sisältää linkin palautelomakkeeseen.",
+        "categoryLocked": "Kysymyssarja lukittu",
+        "categoryActive": "Kysymyssarja avattu",
+        "categoryApproved": "Kysymyssarja läpikäyty"
+      },
+      "adminGroups": {
+        "headerLogoAlt": "",
+        "body": "{{ memberCount }} käyttäjää {{ groupCount }} ryhmässä",
+        "groupListheading": "Omat ryhmät",
+        "noGroups": "Ryhmiä ei ole vielä lisätty.",
+        "activeCategories": "Aktiiviset kysymyssarjat",
+        "categoryLinkButtonLabel": "Siirry ryhmään",
+        "groupPinCode": "Ryhmän PIN-koodi: <bold>{{pin}}</bold>"
+      },
+      "answerSummary": {
+        "answerSummaryTitle": "Tulokset/{{category}}",
+        "results": "Tulokset",
+        "noResultsHeading": "Hetkonen",
+        "noResultsDescription": "Odottelemme vielä lisää vastauksia muilta sovelluksen käyttäjiltä. Tulethan tänne myöhemmin uudestaan.",
+        "description": "Näin muut pelaajat ryhmässäsi ovat vastanneet:",
+        "youAnswered": "Sinä vastasit: <italic>{{answer}}</italic>",
+        "ordinalWithGenetive": {
+          "1": "ensimmäisen",
+          "2": "toisen",
+          "3": "kolmannen",
+          "4": "neljännen",
+          "5": "viidennen",
+          "6": "kuudennen",
+          "7": "seitsemännen",
+          "8": "kahdeksannen",
+          "9": "yhdeksännen"
+        },
+        "endText": "Olet nyt suorittanut sovelluksen {{ordinal}} osion. Onnittelut! Voitte nyt siirtyä yhdessä polulla eteenpäin.",
+        "backButton": "Palaa polulle"
+      },
+      "category": {
+        "cardProgress": "Kortti {{current}} kautta {{total}}",
+        "cardImageAlt": "",
+        "questionNumber": "Kysymyksen numero",
+        "category": "Kysymyssarja",
+        "questionLockedDescription": "Olet jo vastannut kyselyyn",
+        "categoryLocked": "Kysymyssarja {{ categoryId }} lukittu",
+        "next": "Seuraava",
+        "prev": "Edellinen",
+        "endTitle": "Kiitos!",
+        "endContent": "REMOVED",
+        "endButton": "Palaa polulle",
+        "endImageAlt": "",
+        "saveError": "Vastauksen tallentaminen epäonnistui, ole hyvä ja tarkista, annetut vastaukset."
+      },
+      "frontPage": {
+        "heading": "Tervetuloa!",
+        "playerBody": "REMOVED",
+        "playerLoginLabel": "Aloita",
+        "adminBody": " ",
+        "adminLoginLabel": "Kirjaudu ohjaajana",
+        "registerBody": "Tarvitsetko tunnukset?",
+        "registerLabel": "Ota yhteyttä.",
+        "signoutToSignInPlayer": "Haluatko kirjautua sisään pelaajana? <a>Kirjaudu ensin ulos</a>.",
+        "signoutToSignInGroupAdmin": "Haluatko kirjautua sisään ohjaajana? <a>Kirjaudu ensin ulos</a>."
+      },
+      "loading": "Ladataan",
+      "logout": "Kirjaudu ulos",
+      "progress": {
+        "answerSummaryActive": "Tulokset kysymyssarjalle {{ categoryId }}",
+        "answerSummaryDone": "Tulokset kysymyssarjalle {{ categoryId }}",
+        "answerSummaryLocked": "Tulokset kysymyssarjalle {{ categoryId }} lukittu",
+        "feedbackButton": "Palaute"
+      },
+      "registration": {
+        "groupPreview": {
+          "heading": "REMOVED",
+          "groupLabel": "Kuulut ryhmään",
+          "organizationLabel": "REMOVED",
+          "groupAdmin": "Ryhmän ohjaaja",
+          "description": "",
+          "confirm": "Aloita peli",
+          "cancel": "Syötä eri koodi",
+          "joinError": "Ryhmään liittyminen epäonnistui, ole hyvä ja yritä uudelleen"
+        },
+        "pin": {
+          "heading": "PIN-koodi",
+          "body": "Syötä allaolevaan kenttään 5-numeroinen PIN-koodi, jonka olet saanut ryhmänohjaajaltasi.",
+          "inputLabel": "Syötä PIN-koodi",
+          "error": {
+            "codeTooShort": "Syötetty PIN-koodi on liian lyhyt",
+            "groupNotFound": "Antamallasi PIN-koodilla ei löytynyt ryhmiä"
+          },
+          "nextButtonLabel": "Jatka"
+        }
+      }
+    }
+  }
+}

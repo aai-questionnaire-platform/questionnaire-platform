@@ -1,0 +1,51 @@
+name: 'DEV build & deploy'
+on:
+  push:
+    branches:
+      - 'dev'
+  pull_request:
+    branches:
+      - 'dev'
+jobs:
+  cdk_deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checking out our code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install -C cdk
+      - name: Generate environment variables
+        run: |
+          ./generate-env.sh -e dev
+          cat .env
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      - name: Deploy the CDK app
+        if: github.event_name != 'pull_request'
+        run: |
+          cd cdk
+          npx cdk deploy DashboardFrontend-dev ----require-approval never
+          cd ..
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      - name: Deploy react app
+        if: github.event_name != 'pull_request'
+        run: ./scripts/deploy-stack.sh -e dev
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      - name: Clear cloudfront cache
+        if: github.event_name != 'pull_request'
+        run: ./scripts/clear-cdn-cache.sh -e dev
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}

@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "contactDetails": {
+            "properties": {
+                "additionalInfo": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "doorCode": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "postalCode": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "orderId": {
+            "type": "string"
+        },
+        "serviceId": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "contactDetails",
+        "orderId",
+        "serviceId"
+    ],
+    "type": "object"
+}
+

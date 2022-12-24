@@ -1,0 +1,179 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "Category": {
+            "description": "Question category, e.g. \"My life\"; basically a list of questions to be asked in sequence",
+            "properties": {
+                "backgroundColor": {
+                    "type": "string"
+                },
+                "backgroundImage": {
+                    "type": "string"
+                },
+                "data": {
+                    "$ref": "#/definitions/CategoryData"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string"
+                },
+                "questions": {
+                    "items": {
+                        "$ref": "#/definitions/Question"
+                    },
+                    "type": "array"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "data",
+                "description",
+                "id",
+                "questions"
+            ],
+            "type": "object"
+        },
+        "CategoryData": {
+            "properties": {
+                "entryMessages": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "exitMessages": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            },
+            "type": "object"
+        },
+        "Option": {
+            "description": "Alternative with display text and separate value option (e.g. \"I'm good - 5\")",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "label",
+                "value"
+            ],
+            "type": "object"
+        },
+        "Question": {
+            "description": "A question with one of more alternatives\nAlso attaches a topic",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "maxSelectedOptions": {
+                    "type": "number"
+                },
+                "options": {
+                    "items": {
+                        "$ref": "#/definitions/Option"
+                    },
+                    "type": "array"
+                },
+                "tags": {
+                    "items": {
+                        "enum": [
+                            "HN_REQUIRED",
+                            "HN_REQUIRED_GROUP",
+                            "VALIDATE_ON_SAVE"
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "topic": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/definitions/Topic"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "id",
+                "label",
+                "options",
+                "topic"
+            ],
+            "type": "object"
+        },
+        "Topic": {
+            "description": "Classification of a question into a broader topic, like question is related to \"Health\"",
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "label",
+                "value"
+            ],
+            "type": "object"
+        }
+    },
+    "description": "Generic interface for questionnaires, which contain categorized option-based questions",
+    "properties": {
+        "author": {
+            "type": "string"
+        },
+        "categories": {
+            "items": {
+                "$ref": "#/definitions/Category"
+            },
+            "type": "array"
+        },
+        "date_written": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "locale": {
+            "type": "string"
+        },
+        "version": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "author",
+        "categories",
+        "date_written",
+        "id",
+        "locale",
+        "version"
+    ],
+    "type": "object"
+}
+

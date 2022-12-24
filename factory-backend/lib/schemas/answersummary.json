@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "AnswerCount": {
+            "description": "Represents an answer linked to a question in questionnaire",
+            "properties": {
+                "answer_count": {
+                    "type": "number"
+                },
+                "answer_value": {
+                },
+                "question_id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "answer_count",
+                "answer_value",
+                "question_id"
+            ],
+            "type": "object"
+        }
+    },
+    "properties": {
+        "answers_by_question": {
+            "description": "Map of answer (counts) by question id, e.g. three answers with value 1 for question 1 etc [\"1:1=3\", \"2:2=5\", \"3:6=7\"].",
+            "items": {
+                "$ref": "#/definitions/AnswerCount"
+            },
+            "type": "array"
+        },
+        "category_id": {
+            "description": "Category of questions",
+            "type": "string"
+        },
+        "organization_id": {
+            "description": "Ids of organizations, starting from highest, e.g. [9, 99, 999]",
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "questionnaire_id": {
+            "description": "Id of questionnaire",
+            "type": "string"
+        }
+    },
+    "required": [
+        "answers_by_question",
+        "category_id",
+        "organization_id",
+        "questionnaire_id"
+    ],
+    "type": "object"
+}
+

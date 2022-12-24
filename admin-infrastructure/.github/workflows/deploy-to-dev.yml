@@ -1,0 +1,21 @@
+name: "DEV build & deploy"
+on:
+  push:
+    branches:
+      - "dev"
+jobs:
+  cdk_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out our code
+        uses: actions/checkout@v2
+      - name: Install AWS CDK
+        run: npm install aws-cdk
+      - name: Install dependencies
+        run: npm install
+      - name: CDK Deploy
+        run: npx cdk deploy QuestionnaireAdminInfrastructureStack-dev --require-approval=never
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}

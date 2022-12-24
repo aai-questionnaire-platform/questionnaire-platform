@@ -1,0 +1,22 @@
+name: "DEV build & deploy"
+on:
+  push:
+    branches:
+      - "dev"
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+      - uses: aws-actions/setup-sam@v2
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
+      - run: npm install esbuild
+      - run: sed -i'' 's/http:\/\/localhost:3001/https:\/\/MYCUSTOMDOMAIN.FI/g' dashboard/app.ts
+      - run: PATH=$PATH:node_modules/esbuild/bin/ sam build --beta-features --use-container
+      - run: sam deploy --capabilities CAPABILITY_IAM --stack-name dashboard-backend-dev --resolve-s3 --no-confirm-changeset --no-fail-on-empty-changeset --parameter-overrides env=dev

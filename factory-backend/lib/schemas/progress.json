@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "CategoryState": {
+            "enum": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "type": "number"
+        },
+        "CategoryStatus": {
+            "properties": {
+                "category_id": {
+                    "type": "string"
+                },
+                "state": {
+                    "$ref": "#/definitions/CategoryState"
+                }
+            },
+            "required": [
+                "category_id",
+                "state"
+            ],
+            "type": "object"
+        }
+    },
+    "description": "Progress by question category",
+    "properties": {
+        "category_statuses": {
+            "items": {
+                "$ref": "#/definitions/CategoryStatus"
+            },
+            "type": "array"
+        },
+        "organization_ids": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "questionnaire_id": {
+            "type": "string"
+        },
+        "user_id": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "category_statuses"
+    ],
+    "type": "object"
+}
+

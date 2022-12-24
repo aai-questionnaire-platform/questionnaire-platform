@@ -1,0 +1,6 @@
+{
+  "importOrder": ["^@/(.*)$", "^[./]"],
+  "importOrderSeparation": true,
+  "quoteProps": "consistent",
+  "singleQuote": true
+}

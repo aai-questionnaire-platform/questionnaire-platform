@@ -1,0 +1,7 @@
+questionnaire-factory:
+  component: '@sls-next/serverless-component@3.7.0' # use latest version, currently 3.7.0
+  inputs:
+    bucketName: ${env.NEXTJS_BUCKET}
+    bucketRegion: 'eu-west-1'
+    cloudfront:
+      distributionId: ${env.NEXTJS_CLOUDFRONTID}

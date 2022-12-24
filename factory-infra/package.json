@@ -1,0 +1,39 @@
+{
+  "name": "questionnaire-infrastructure",
+  "version": "0.1.0",
+  "bin": {
+    "questionnaire-factory-infra": "bin/questionnaire-factory-infra.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.169.0",
+    "@types/aws-lambda": "8.10.76",
+    "@types/jest": "26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk": "1.169.0",
+    "aws-lambda": "1.0.6",
+    "jest": "28.1.1",
+    "ts-jest": "28.0.5",
+    "ts-node": "9.0.0",
+    "typescript": "4.6.4"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "1.169.0",
+    "@aws-cdk/aws-cognito": "1.169.0",
+    "@aws-cdk/aws-dynamodb": "1.169.0",
+    "@aws-cdk/aws-lambda": "1.169.0",
+    "@aws-cdk/aws-lambda-nodejs": "1.169.0",
+    "@aws-cdk/aws-route53": "1.169.0",
+    "@aws-cdk/aws-route53-targets": "1.169.0",
+    "@aws-cdk/aws-s3": "1.169.0",
+    "@aws-cdk/aws-secretsmanager": "1.169.0",
+    "@aws-cdk/core": "1.169.0",
+    "@aws-cdk/custom-resources": "1.169.0",
+    "@aws-sdk/client-sesv2": "^3.46.0"
+  }
+}

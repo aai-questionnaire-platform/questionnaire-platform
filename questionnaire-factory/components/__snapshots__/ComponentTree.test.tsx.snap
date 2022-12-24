@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a component with component as a child 1`] = `
+.c0 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: pre-line;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    <span
+      class="c0"
+    >
+      grandchild text
+    </span>
+  </p>
+</div>
+`;
+
+exports[`should render a component with string as a child 1`] = `
+.c0 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: pre-line;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    child string
+  </p>
+</div>
+`;
+
+exports[`should render a component without children 1`] = `
+.c0 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: pre-line;
+}
+
+<div>
+  <p
+    class="c0"
+  />
+</div>
+`;
+
+exports[`should render a string 1`] = `
+<div>
+  string child
+</div>
+`;
+
+exports[`should render a tree with siblings 1`] = `
+.c0 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: pre-line;
+}
+
+.c1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  white-space: pre-line;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    sibling 1
+  </p>
+  <p
+    class="c1"
+  >
+    sibling 2
+  </p>
+</div>
+`;
+
+exports[`should render a tree with siblings with children 1`] = `
+.c0 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  white-space: pre-line;
+}
+
+.c1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  white-space: pre-line;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    <span
+      class="c0"
+    >
+      grandchild 1
+    </span>
+  </p>
+  <p
+    class="c1"
+  >
+    <span
+      class="c1"
+    >
+      grandchild 2
+    </span>
+  </p>
+</div>
+`;
+
+exports[`should render an empty tree 1`] = `<div />`;

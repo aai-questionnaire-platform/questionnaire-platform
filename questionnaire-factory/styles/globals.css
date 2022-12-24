@@ -1,0 +1,34 @@
+html,
+body {
+  font-size: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body.prevent-scroll {
+  overflow: hidden;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}

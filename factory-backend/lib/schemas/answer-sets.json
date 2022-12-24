@@ -1,0 +1,85 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "Answer": {
+            "description": "Represents an answer linked to a question in questionnaire",
+            "properties": {
+                "answer_value": {
+                },
+                "question_id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "answer_value",
+                "question_id"
+            ],
+            "type": "object"
+        },
+        "AnswerSet": {
+            "description": "Interface for answering a set of questions",
+            "properties": {
+                "answers": {
+                    "items": {
+                        "$ref": "#/definitions/Answer"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "completed_categories": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "key": {
+                    "$ref": "#/definitions/AnswerSetKey"
+                }
+            },
+            "required": [
+                "answers",
+                "key"
+            ],
+            "type": "object"
+        },
+        "AnswerSetKey": {
+            "description": "AnswerSet key structure",
+            "properties": {
+                "organization_ids": {
+                    "description": "Ordered list of organization ids in top-down order, e.g. \"[0]Kuopio[1]Tuomiokirkkosrk[2]Kesäryhmä1\"",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "type": "array",
+                    "uniqueItems": true
+                },
+                "questionnaire_id": {
+                    "description": "Link to a specific questionnaire",
+                    "type": "string"
+                },
+                "user_id": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "organization_ids",
+                "questionnaire_id"
+            ],
+            "type": "object"
+        }
+    },
+    "properties": {
+        "answer_sets": {
+            "items": {
+                "$ref": "#/definitions/AnswerSet"
+            },
+            "type": "array"
+        }
+    },
+    "required": [
+        "answer_sets"
+    ],
+    "type": "object"
+}
+

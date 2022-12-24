@@ -1,0 +1,3 @@
+export const SMALL_VIEWPORT_WIDTH_MAX = 400;
+export const MEDIUM_VIEWPORT_WIDTH_MIN = 600;
+export const SMALL_SCREEN_HEIGHT = 376;

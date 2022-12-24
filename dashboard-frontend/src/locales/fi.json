@@ -1,0 +1,64 @@
+{
+  "translation": {
+    "about": {
+      "title": "Tietoa palvelusta",
+      "general": {
+        "short": "<h2>Yleistä palvelusta</h2>",
+        "long": "<h2>Kansallinen tekoälyohjelma AuroraAI</h2>"
+      },
+      "privacy": {
+        "short": "<h2>Tietosuoja</h2>",
+        "long": "<h2>Tietosuoja AuroraAI-verkossa</h2>"
+      },
+      "readMore": "Lue lisää"
+    },
+    "header": {
+      "back": "Takaisin"
+    },
+    "home": {
+      "heading": "AuroraAI kotinäkymä",
+      "recommendationBanner": {
+        "singleRecommendationTitle": "Sinulle on 1 uusi palvelusuositus",
+        "multipleRecommendationsTitle": "Sinulle on uusia palvelusuosituksia"
+      },
+      "navigation": {
+        "favourites": "Suosikit",
+        "services": "Palvelut",
+        "info": "Info",
+        "profile": "Profiili"
+      },
+      "services": {
+        "title": "Palvelut",
+        "noServices": "Ei palveluita",
+        "forYou": "Sinulle"
+      },
+      "serviceCategories": {
+        "title": "Kategoriat",
+        "noCategories": "Ei palvelukategorioita"
+      }
+    },
+    "opensInNewTab": "Avautuu uuteen välilehteen",
+    "profile": {
+      "title": "Käyttäjätiedot",
+      "underConstruction": "Tämä palvelun osa ei ole vielä käytössä.",
+      "tabs": {
+        "profile": "Profiili",
+        "services": "Palvelut"
+      }
+    },
+    "error": {
+      "backend": "Ongelma taustapalvelussa"
+    },
+    "icon": {
+      "chevronRight": "Alaspäin osoittava nuoli"
+    },
+    "recommendations": {
+      "title": "Suositukset",
+      "noRecommendations": "Ei suosituksia"
+    },
+    "services": {
+      "title": "Palvelut",
+      "noServices": "Ei palveluita"
+    }
+  }
+}

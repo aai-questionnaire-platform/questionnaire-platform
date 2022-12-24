@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "esbuild": "^0.15.7"
+  },
+  "scripts": {
+    "dev": "sam local start-api"
+  }
+}

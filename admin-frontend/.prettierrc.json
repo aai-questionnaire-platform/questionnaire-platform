@@ -1,0 +1,11 @@
+{
+  "quoteProps": "consistent",
+  "singleQuote": true,
+  "importOrder": [
+      ".*/api/(.*)$",
+      ".*/util(.*)$",
+      ".*/components/(.*)$",
+      ".*/routes/(.*)$",
+      "^[./]"
+  ]
+}

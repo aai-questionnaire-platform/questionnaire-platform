@@ -1,0 +1,58 @@
+name: 'Deploy Instance'
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+  JWT_SECRET: ${{ secrets.JWT_SECRET }}
+  NEXTAUTH_SECRET: ${{  secrets.NEXTAUTH_SECRET }}
+  MYGAME_CLIENTID: ${{ secrets.MYGAME_CLIENTID }}
+  MYGAME_CLIENTSECRET: ${{ secrets.MYGAME_CLIENTSECRET }}
+on:
+  workflow_dispatch:
+    inputs:
+      instance:
+        type: choice
+        description: Select instance
+        required: true
+        options:
+          - mygame-dev
+          - mygame-test
+jobs:
+  cdk_deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checking out our code
+        uses: actions/checkout@v2
+      - name: Install AWS CDK
+        run: npm install aws-cdk
+      - name: Install dependencies
+        run: |
+          npm ci
+          npm ci -C cdk
+      - name: Run CDK app tests
+        run: |
+          cd cdk
+          npm run test
+          cd ..
+      - name: Deploy the CDK app
+        run: |
+          cd cdk
+          npx cdk deploy QFFrontend-${{ github.event.inputs.instance }} --require-approval never
+          cd ..
+      - name: Generate environment variables for build step
+        run: ./generate-env.sh -e ${{ github.event.inputs.instance }} -f .env.local
+      - name: Build Next.js app
+        run: npm run build
+      - name: Run Next.js app tests
+        run: npm run test:ci
+      - name: Generate environment variables
+        run: |
+          echo "MYGAME_CLIENTID=$MUNTESTI_CLIENTID" > .env.local
+          echo "MYGAME_CLIENTSECRET=$MUNTESTI_CLIENTSECRET" >> .env.local
+          echo "JWT_SECRET=$JWT_SECRET" >> .env.local
+          echo "NEXTAUTH_SECRET=$NEXTAUTH_SECRET" >> .env.local
+          ./generate-env.sh -e ${{ github.event.inputs.instance }} -f .env.local
+          cp .env.local .env.dev
+      - name: Deploy serverless app
+        run: npx serverless --stage=dev --debug

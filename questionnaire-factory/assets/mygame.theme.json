@@ -1,0 +1,176 @@
+{
+  "$schema": "../schema/Theme.json",
+  "common": {
+    "fgColor": "#fff",
+    "bgColor": "#323232",
+    "font": "'IBM Plex Sans', sans-serif"
+  },
+  "heading": {
+    "font": "'IM FELL English SC', serif",
+    "weight": "400"
+  },
+  "divider": "#d5d8dd",
+  "primaryButton": {
+    "default": {
+      "bgColor": "#474E31",
+      "fgColor": "#fff"
+    },
+    "active": {
+      "bgColor": "#474E31",
+      "fgColor": "#fff"
+    },
+    "disabled": {
+      "bgColor": "#8e8e8e",
+      "fgColor": "#fff"
+    }
+  },
+  "secondaryButton": {
+    "default": {
+      "bgColor": "#242D2D",
+      "fgColor": "#fff"
+    },
+    "active": {
+      "bgColor": "#242D2D",
+      "fgColor": "#fff"
+    },
+    "disabled": {
+      "bgColor": "#575050",
+      "fgColor": "#fff"
+    }
+  },
+  "flatButton": {
+    "default": {
+      "fgColor": "#A9A89C"
+    },
+    "active": {
+      "fgColor": "#A9A89C"
+    },
+    "disabled": {
+      "fgColor": "#b8b7ad"
+    }
+  },
+  "frontPage": {
+    "divider": "#d5d8dd"
+  },
+  "category": {
+    "card": {
+      "fgColor": "#A9A89C",
+      "bgColor": "#272B24"
+    },
+    "categoryProgressTracker": {
+      "default": {
+        "bgColor": "#5E523D",
+        "fgColor": "#A9A89C"
+      },
+      "active": {
+        "bgColor": "linear-gradient(94.97deg, #C9ADCA -8.15%, #E2C19A 115.31%)",
+        "fgColor": "#000"
+      }
+    },
+    "option": {
+      "default": {
+        "bgColor": "linear-gradient(94.97deg, #C9ADCA -8.15%, #E2C19A 115.31%)",
+        "fgColor": "#2e3238",
+        "border": "none"
+      },
+      "active": {
+        "bgColor": "linear-gradient(93.63deg, #5C523B -1.39%, #575F43 92.42%)",
+        "fgColor": "#fff",
+        "border": "none"
+      }
+    }
+  },
+  "categoryEnd": {
+    "playerAppHeader": {
+      "color": "#fff"
+    }
+  },
+  "progress": {
+    "fgColor": "#554A41",
+
+    "skeleton": {
+      "fgColor": "#d5d8dd",
+      "bgColor": "#fff"
+    },
+
+    "progressButton": {
+      "default": {
+        "bgColor": "#242D2D",
+        "fgColor": "#fff"
+      },
+      "active": {
+        "bgColor": "#242D2D",
+        "fgColor": "#fff",
+        "pulseColor": "#f1db8a"
+      },
+      "disabled": {
+        "bgColor": "#242D2D",
+        "fgColor": "#A9A89C"
+      }
+    }
+  },
+  "answerSummary": {
+    "fgColor": "#fff",
+    "list": {
+      "bgColor": "#272A24",
+      "fgColor": "#fff"
+    },
+    "chart": {
+      "default": "#C9ADCA",
+      "highlight": "#817E6B",
+      "text": "#fff"
+    }
+  },
+  "adminGroups": {
+    "fgColor": "#fff",
+    "divider": "#fff",
+    "heading": {
+      "fgColor": "#fff"
+    },
+    "header": {
+      "bgColor": "#242D2D",
+      "fgColor": "#fff",
+      "border": "#242D2D"
+    },
+    "groupListItem": {
+      "fgColor": "#fff",
+      "bgColor": "#272A24"
+    },
+    "activeCategoryListItem": {
+      "bgColor": "#A9A89C",
+      "fgColor": "#323232"
+    }
+  },
+  "adminCategories": {
+    "fgColor": "#2e3238",
+    "header": {
+      "bgColor": "#242D2D",
+      "fgColor": "#fff",
+      "border": "#242D2D"
+    },
+    "divider": "#d5d8dd",
+    "dashedLine": "#b9bec6",
+    "categoryListItem": {
+      "fgColor": "#fff",
+      "bgColor": "#272A24",
+      "activeBorder": "#A9A89C"
+    }
+  },
+  "adminAnswerSummary": {
+    "fgColor": "#fff",
+    "header": {
+      "bgColor": "#242D2D",
+      "fgColor": "#fff",
+      "border": "#242D2D"
+    },
+    "adminAnswerSummaryListItem": {
+      "fgColor": "#fff",
+      "bgColor": "#272A24"
+    },
+    "chart": {
+      "default": "#E8E4DC",
+      "highlight": "#625F36",
+      "text": "#fff"
+    }
+  }
+}

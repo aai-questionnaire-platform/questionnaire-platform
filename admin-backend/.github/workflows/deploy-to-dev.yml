@@ -1,0 +1,27 @@
+name: 'Build Question Game Admin Backend to dev AWS'
+on:
+  push:
+    branches:
+      - 'dev'
+  pull_request:
+    branches:
+      - 'dev'
+jobs:
+  cdk_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out our code
+        uses: actions/checkout@v2
+      - name: Install AWS CDK
+        run: npm install aws-cdk
+      - name: Install dependencies
+        run: npm install | npm install -C src
+      - name: Run unit tests
+        run: npm run test
+      - name: CDK Deploy
+        if: github.event_name != 'pull_request'
+        run: npx cdk deploy MMK-QuestionnaireAdmin-dev --require-approval=never
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}

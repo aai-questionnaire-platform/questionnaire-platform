@@ -1,0 +1,54 @@
+{
+  "name": "question-game-admin-backend",
+  "version": "0.0.6",
+  "bin": {
+    "question-game-admin-backend": "bin/question-game-admin-backend.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourrepository/admin-backend.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "cdk": "cdk",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@apollo/client": "3.4.15",
+    "@aws-cdk/aws-apigateway": "^1.130.0",
+    "@aws-cdk/aws-lambda": "^1.130.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.130.0",
+    "@aws-cdk/aws-secretsmanager": "^1.130.0",
+    "axios": "0.21.4",
+    "cross-fetch": "^3.1.4",
+    "graphql": "^15.5.3",
+    "source-map-support": "^0.5.20",
+    "uuid": "^8.3.2",
+    "jwt-decode": "^3.1.2"
+  },
+  "devDependencies": {
+    "@aws-cdk/core": "^1.130.0",
+    "@types/aws-lambda": "^8.10.85",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.6",
+    "@types/source-map-support": "^0.5.4",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
+    "eslint": "^8.1.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.{js,css,md,ts}": "prettier --write"
+  }
+}
